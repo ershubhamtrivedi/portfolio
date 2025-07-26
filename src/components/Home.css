@@ -1,0 +1,283 @@
+.MainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+  height: auto;
+  box-sizing: border-box;
+}
+.homeContainer {
+    height: auto;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+}
+
+.profileContent {
+    width: 60vw;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.heading {
+    font-size: 2.5rem;
+    color: brown; 
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.profileContent p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    max-width: 800px;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.profileImage {
+    height: 70vh;
+    width: auto;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.achieveBoxes{
+  display: flex;
+  justify-content:space-around;
+  width:35vw;
+}
+
+.box{
+  
+  background-color: white;
+  color: brown;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.skillContainer{
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  margin-top: 10px;
+}
+
+.skillHeading{
+  font-size: 42px;
+}
+
+.skill{
+  width:7vw;
+  height: 15vh;
+  border: 1px solid brown;
+  padding: 20px;
+  margin:20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.htmlIcon{
+  color: rgb(255, 123, 0);
+  height: auto;
+  width: 70px;
+}
+
+.cssIcon{
+  color: rgb(0, 119, 255);
+  height: auto;
+  width: 70px;
+}
+
+.pythonIcon{
+  color: rgb(0, 119, 255);
+  height: auto;
+  width: 70px;
+}
+
+.jsIcon{
+  color: rgb(255, 136, 0);
+  height: auto;
+  width: 70px;
+}
+
+.nodeIcon{
+  color: rgb(22, 66, 9);
+  height: auto;
+  width: 70px;
+}
+
+.bootIcon{
+  color: rgb(74, 14, 143);
+  height: auto;
+  width: 70px;
+}
+
+.gitIcon{
+  color: rgb(216, 16, 16);
+  height: auto;
+  width: 70px;
+}
+
+.skillsObtained{
+  display: flex;
+  flex-wrap: wrap;
+  width: 35vw;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 15px;
+    width:15vw;
+    padding: 8px 12px;
+    background-color: brown;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    border-width: 0;
+    align-self: flex-start;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .MainContainer,
+  .homeContainer,
+  .profileContent,
+  .skillContainer,
+  .skillsObtained {
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .homeContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileImage {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .profileContent {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .profileContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .achieveBoxes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 80%;
+    border: 1px solid brown;
+  }
+
+  .skillContainer {
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .skillHeading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .skillsObtained {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .skill {
+    width: 25vw;
+    height: auto;
+    padding: 10px;
+  }
+
+  .htmlIcon,
+  .cssIcon,
+  .pythonIcon,
+  .jsIcon,
+  .nodeIcon,
+  .bootIcon,
+  .gitIcon {
+    width: 50px;
+  }
+
+  .button {
+    width: 60vw;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+  }
+
+}
+

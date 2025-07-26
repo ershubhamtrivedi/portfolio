@@ -1,0 +1,46 @@
+.MainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+  height: auto;
+  box-sizing: border-box;
+}
+.EducationContainer{
+    height:30vh;
+    width:80vw;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(165, 42, 42, 0.3)
+}
+.EducationDetails{
+    color: brown;
+}
+.institute{
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+  .EducationContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 90vw;
+    padding: 15px;
+    margin: 20px auto;
+    gap: 10px;
+  }
+
+  .institute {
+    width: 100%;
+  }
+
+  .EducationDetails {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,48 @@
+.MainContainer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+  box-sizing: border-box;
+}
+.ProjectContainer{
+    height:auto;
+    width:80vw;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(165, 42, 42, 0.3)
+}
+.ProjectDetails{
+    color: brown;
+}
+.view-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: brown;
+    width:10vw;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-link:hover {
+    background-color: #5d4037;
+}
+
+
+@media (max-width: 768px){
+    .view-link{
+        width:auto;
+    }
+}
